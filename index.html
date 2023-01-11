@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Fitness GYM</title>
+    <Style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/gym3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            overflow-y: hidden;
+        }
+        .left{
+            display: inline-block;
+            /* border: 4px solid red; */
+            margin: 8px 10px;
+        }
+        .left img{
+            width: 100px;
+            filter: invert();
+        }
+        .mid{
+            /* border: 4px solid rgb(20, 194, 23); */
+            width: 45%;
+            height: 50px;
+            margin: -114px auto;
+            padding: auto;
+        }
+        .right{
+            display: inline-block;
+            margin: 8px;
+            /* border: 4px solid rgb(127, 9, 182); */
+            width: 25%;
+            position: absolute;
+            right: 2px;
+            top: 4px;
+        }
+        .mid li{
+            float: left;
+            list-style: none;
+            border: 2px solid red;
+            margin: 0px 10px;
+            border-radius: 15px;
+        }
+        .mid a{
+            color: white;
+            text-decoration: none;
+            margin: 2px 10px;
+            font-size: 20px;
+        }
+        .mid a:hover{
+            color: rgb(208, 144, 25);
+            text-decoration: underline;
+        }
+        .btn{
+            float: right;
+            margin: 0px 10px;
+            cursor: pointer;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .btn:hover{
+            color: rgb(195, 32, 32);
+        }
+        .form{
+            border: 4px solid white;
+            width: 600px;
+            height: 400px;
+            margin: 225px 90px;
+            border-radius: 20px;
+            padding: 2px 4px;
+        }
+        .form h2{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .form input{
+            width: 500px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .box{
+            padding: 2px;
+            margin: 20px 40px;
+        }
+        .box input{
+            font-style: italic;
+            border-radius: 10px;
+        }
+        #Submit{
+            color: rgb(255, 255, 255);
+            background-color: rgb(22, 21, 20);
+        }
+        #Submit:hover{
+            color: rgb(245, 18, 18);
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="box">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Call Us</button>
+        </div>
+    </header>
+    <div class="form">
+        <h2>Join The Best GYM Now</h2>
+        <form action="backend.php">
+            <div class="box">
+                <input type="text" name="Name" placeholder="Enter Your Name">
+            </div>
+            <div class="box">
+                <input type="number" name="Age" placeholder="Enter Your Age">
+            </div>
+            <div class="box">
+                <input type="text" name="Gender" placeholder="Enter Your Gender">
+            </div>
+            <div class="box">
+                <input type="number" name="Mobile Number" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="box">
+                <input type="email" name="Email" placeholder="Enter Your Email">
+            </div>
+            <div class="box">
+                <input type="submit" value="Submit" id="Submit">
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
